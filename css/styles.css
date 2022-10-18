@@ -15,6 +15,7 @@ h1, p {
 
 main {
     display: flex;
+    justify-content: space-between;
 }
 .container {
     max-width: 1512px;
@@ -51,13 +52,20 @@ main {
 }
 
 .info {
-    
+    max-width: 800px;
 }
 
 .title {
     padding-top: 128px;
     font-weight: 700;
     font-size: 87px;
+    line-height: 1.03;
+    color: #000000;
+}
+
+.work {
+    font-weight: 700;
+    font-size: 80px;
     line-height: 1.03;
     color: #000000;
 }
@@ -123,10 +131,27 @@ h1 {
     max-width: 500px;
     height: auto;
     margin-right: 80px;
+    
+}
+
+.image {
+    position: relative;
 }
 
 .photo img {
     max-width: 100%;
+    height: auto;
+    border-radius: 0 0 0 250px;
+    border: 8px solid #000000;
+    position: relative;
 }
 
-.cover {}
+.cover {
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: #000000;
+    position: absolute;
+    border-radius: 0 0 0 250px;
+    right: -10px;
+    top: -10px;
+}
